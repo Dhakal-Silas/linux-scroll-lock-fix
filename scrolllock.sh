@@ -16,8 +16,8 @@ CURRENT_BRIGHTNESS=$(cat "$SCROLLLOCK_DIR/brightness")
 
 # Toggle brightness
 if [ "$CURRENT_BRIGHTNESS" -eq 0 ]; then
-    echo "38258" | sudo -S sh -c "echo 1 > \"$SCROLLLOCK_DIR/brightness\""
+    echo "YOUR_PASSWORD" | sudo -S sh -c "echo 1 > \"$SCROLLLOCK_DIR/brightness\""
 else
-    echo "38258" | sudo -S sh -c "echo 0 > \"$SCROLLLOCK_DIR/brightness\""
+    echo "YOUR_PASSWORD" | sudo -S sh -c "echo 0 > \"$SCROLLLOCK_DIR/brightness\""
 fi
 
